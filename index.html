@@ -37,6 +37,13 @@
       width: 400px;
       height: 300px;
     }
+    .member{
+      border-radius: 20px;
+      overflow: hidden;
+    }
+    
+   
+   
 
     @media only screen and (max-width: 500px) {
       #hero .main_p {
@@ -63,28 +70,29 @@
             <ul>
               <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
               <li><a class="nav-link scrollto" href="#about">About Us</a></li>
-              <li><a class="nav-link scrollto" href="#services">Solutions</a></li>
+              <!-- <li><a class="nav-link scrollto" href="#services">Solutions</a></li> -->
+              <li class="dropdown"><a href="#services"><span>Solutions</span> <i class="bi bi-chevron-down"></i></a>
+                <ul>
+                  <li><a href="#services">SoC</a></li>
+                  <!-- <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
+                    <ul>
+                      <li><a href="#"></a></li>
+                      <li><a href="#"></a></li>
+                      <li><a href="#"></a></li>
+                      <li><a href="#">Deep Drop Down 4</a></li>
+                      <li><a href="#">Deep Drop Down 5</a></li>
+                    </ul>
+                  </li> -->
+                  <li><a href="#services">EDA</a></li>
+                  <li><a href="#services">ADAS</a></li>
+                  <!-- <li><a href="#">Drop Down 4</a></li> -->
+                </ul>
+              </li>
               <li><a class="nav-link scrollto" href="#team">Team</a></li>
               <li><a class="nav-link scrollto " href="./careers.html">Careers</a></li>
 
               <!-- <li><a class="nav-link  " href="blog.html">Blog</a></li> -->
-              <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
-                <ul>
-                  <li><a href="#">Drop Down 1</a></li>
-                  <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                    <ul>
-                      <li><a href="#">Deep Drop Down 1</a></li>
-                      <li><a href="#">Deep Drop Down 2</a></li>
-                      <li><a href="#">Deep Drop Down 3</a></li>
-                      <li><a href="#">Deep Drop Down 4</a></li>
-                      <li><a href="#">Deep Drop Down 5</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="#">Drop Down 2</a></li>
-                  <li><a href="#">Drop Down 3</a></li>
-                  <li><a href="#">Drop Down 4</a></li>
-                </ul>
-              </li> -->
+             
               <li><a class="nav-link scrollto" href="#contact">Contact Us</a></li>
             </ul>
             <i class="bi bi-list mobile-nav-toggle"></i>
@@ -189,7 +197,8 @@
 
       </div>
     </div>
-  </section><!-- End Hero Section -->
+  </section>
+  <!-- End Hero Section -->
 
   <main id="main">
 
@@ -301,37 +310,24 @@
 
         <header class="section-header wow fadeInUp">
           <h3>Solutions</h3>
-          <p>Laudem latine persequeris id sed, ex fabulas delectus quo. No vel partiendo abhorreant vituperatoribus, ad
-            pro quaestio laboramus. Ei ubique vivendum pro. At ius nisl accusam lorenta zanos paradigno tridexa
-            panatarel.</p>
+          <p>Need some content in this </p>
         </header>
 
-        <div class="row">
+        <div  class="row services_box">
 
-          <div class="col-lg-4 col-md-6 box" data-aos="fade-up" data-aos-delay="100">
-            <!-- <div class="icon"><i class="bi bi-briefcase"></i></div> -->
-            <h4 class="title"><a href="">Embedded </a></h4>
-            <p class="description">
-              The edge computing device acquires data from vehicle sensors and cameras,
-              subsequently processing it.This AI device for edge computing will incorporate cutting-edge ADAS (Advanced
-              Driver Assistance System) and DMS (Driver Monitoring System) functionalitiesP2F is initiating the process
-              of designing Edge Computing Device applications with all the necessary components for the ADAS feature and
-              the Autonomous Vehicle Market.Targeted at the Indian market and its road conditions, this versatile edge
-              computing device serves various applications.
-            </p>
-          </div>
-          <div class="col-lg-4 col-md-6 box" data-aos="fade-up" data-aos-delay="200">
+          
+          <div id="eda" class="col-lg-4 col-md-6 box" data-aos="fade-up" data-aos-delay="200">
             <!-- <div class="icon"><i class="bi bi-card-checklist"></i></div> -->
-            <h4 class="title"><a href="">EDA</a></h4>
+            <h4 class="title text-center"><a href="">EDA</a></h4>
             <p class="description">P2F Semi is developing a new age Electronic Design Automation Solutions in the field
               of timing analysis and closure for Physical Design with AI-First principles.
               This solution reduces the Turn- Around-Time (TAT) involved in fixing timing violations in the chip design
               cycle by upto 50% in full run cycle and by upto 70% in ECO cycle.
               It also provides avenues to drastically cut power budgets of the chip by upto 25%</p>
           </div>
-          <div class="col-lg-4 col-md-6 box" data-aos="fade-up" data-aos-delay="300">
+          <div id="soc" class="col-lg-4 col-md-6 box" data-aos="fade-up" data-aos-delay="300">
             <!-- <div class="icon"><i class="bi bi-bar-chart"></i></div> -->
-            <h4 class="title"><a href="">System on Chip</a></h4>
+            <h4 class="title text-center"><a href="">System on Chip</a></h4>
             <p class="description">P2F is embarking upon the design and architecture of SOC (System on Chip) for the
               Autonomous Vehicle Market with the goal to make it available for vehicles at all price points.
               This SOC will have the latest and greatest ADAS (Advanced Driver Assistance system) as well as
@@ -340,26 +336,38 @@
               high resolution cameras, both in- cabin and front/rear facing.
               This product will be aimed at Indian markets and Indian road conditions.</p>
           </div>
-          <div class="col-lg-4 col-md-6 box" data-aos="fade-up" data-aos-delay="200">
+          <div id="adas" class="col-lg-4 col-md-6 box" data-aos="fade-up" data-aos-delay="400">
             <!-- <div class="icon"><i class="bi bi-binoculars"></i></div> -->
-            <h4 class="title"><a href="">ADAS</a></h4>
+            <h4 class="title text-center"><a href="">ADAS</a></h4>
             <p class="description">P2F embarks upon a path to develop all- in-one ADAS solutions designed for diverse
               vehicle types, optimized for the unique road conditions in India. Our objective is to extend these
               solutions across various vehicle segments, including automobiles, buses, rickshaws, and motorcycles, among
               others.</p>
           </div>
-          <div class="col-lg-4 col-md-6 box" data-aos="fade-up" data-aos-delay="300">
-            <!-- <div class="icon"><i class="bi bi-brightness-high"></i></div> -->
+          <!-- <div class="col-lg-3 col-md-6 box" data-aos="fade-up" data-aos-delay="500">
+            <div class="icon"><i class="bi bi-briefcase"></i></div>
+            <h4 class="title text-center"><a href="">Embedded </a></h4>
+            <p class="description">
+              The edge computing device acquires data from vehicle sensors and cameras,
+              subsequently processing it.This AI device for edge computing will incorporate cutting-edge ADAS (Advanced
+              Driver Assistance System) and DMS (Driver Monitoring System) functionalitiesP2F is initiating the process
+              of designing Edge Computing Device applications with all the necessary components for the ADAS feature and
+              the Autonomous Vehicle Market.Targeted at the Indian market and its road conditions, this versatile edge
+              computing device serves various applications.
+            </p>
+          </div> -->
+          <!-- <div class="col-lg-4 col-md-6 box" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon"><i class="bi bi-brightness-high"></i></div>
             <h4 class="title"><a href="">One more </a></h4>
             <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
               voluptatum deleniti atque</p>
           </div>
           <div class="col-lg-4 col-md-6 box" data-aos="fade-up" data-aos-delay="400">
-            <!-- <div class="icon"><i class="bi bi-calendar4-week"></i></div> -->
+            <div class="icon"><i class="bi bi-calendar4-week"></i></div>
             <h4 class="title"><a href="">One more</a></h4>
             <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum
               soluta nobis est eligendi</p>
-          </div>
+          </div> -->
 
         </div>
 
@@ -720,14 +728,14 @@
       <div class="container" data-aos="fade-up">
         <div class="section-header">
           <h3>Team</h3>
-          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+          <!-- <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p> -->
         </div>
 
         <div class="row">
 
           <div class="col-lg-3 col-md-6">
             <div class="member" data-aos="fade-up" data-aos-delay="100">
-              <img src="assets/img/team-1.jpg" class="img-fluid" alt="">
+              <img src="assets/img/ANITHA G.jpg" class="img-fluid" alt="">
               <div class="member-info">
                 <div class="member-info-content">
                   <h4>ANITHA G</h4>
@@ -745,7 +753,7 @@
 
           <div class="col-lg-3 col-md-6">
             <div class="member" data-aos="fade-up" data-aos-delay="200">
-              <img src="assets/img/team-2.jpg" class="img-fluid" alt="">
+              <img src="assets/img/KEDAR P.jpg" class="img-fluid" alt="">
               <div class="member-info">
                 <div class="member-info-content">
                   <h4>KEDAR PATANKAR</h4>
@@ -782,7 +790,7 @@
 
           <div class="col-lg-3 col-md-6">
             <div class="member" data-aos="fade-up" data-aos-delay="400">
-              <img src="assets/img/team-4.jpg" class="img-fluid" alt="">
+              <img src="assets/img/VEERA S.jpg" class="img-fluid" alt="">
               <div class="member-info">
                 <div class="member-info-content">
                   <h4>VEERA SHENNAPPAN</h4>
@@ -803,7 +811,7 @@
 
           <div class="col-lg-3 col-md-6">
             <div class="member" data-aos="fade-up" data-aos-delay="100">
-              <img src="assets/img/team-1.jpg" class="img-fluid" alt="">
+              <img src="assets/img/RAJIT Y.jpg" class="img-fluid" alt="">
               <div class="member-info">
                 <div class="member-info-content">
                   <h4>RANJIT YEWALE</h4>
@@ -856,7 +864,7 @@
           </div>
 
 
-          <div class="col-lg-3 col-md-6">
+          <!-- <div class="col-lg-3 col-md-6">
             <div class="member" data-aos="fade-up" data-aos-delay="400">
               <img src="assets/img/team-1.jpg"  class="img-fluid" alt="">
               <div class="member-info">
@@ -872,12 +880,13 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
 
         </div>
 
       </div>
-    </section><!-- End Team Section -->
+    </section>
+    <!-- End Team Section -->
 
     <!-- <section id="facts">
       <div class="container" data-aos="fade-up">
@@ -961,7 +970,7 @@
               <i class="bi bi-geo-alt"></i>
               <h3>Address -3</h3>
               <address>Pune
-                Electronic City, Bengaluru, Karnataka
+                some real time addre will apeear hereadsfd
                 - 560100
               </address>
               <div style="padding: 10px;">
@@ -1016,7 +1025,8 @@
       </div>
     </section><!-- End Contact Section -->
 
-  </main><!-- End #main -->
+  </main>
+  <!-- End #main -->
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
