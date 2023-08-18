@@ -32,9 +32,16 @@
       /* border: 2px solid red; */
       padding: 10px;
     }
-    .member img{
+
+    .member img {
       width: 400px;
       height: 300px;
+    }
+
+    @media only screen and (max-width: 500px) {
+      #hero .main_p {
+        display: none;
+      }
     }
   </style>
 </head>
@@ -55,7 +62,7 @@
           <nav id="navbar" class="navbar">
             <ul>
               <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-              <li><a class="nav-link scrollto" href="#about">About</a></li>
+              <li><a class="nav-link scrollto" href="#about">About Us</a></li>
               <li><a class="nav-link scrollto" href="#services">Solutions</a></li>
               <li><a class="nav-link scrollto" href="#team">Team</a></li>
               <li><a class="nav-link scrollto " href="./careers.html">Careers</a></li>
@@ -103,7 +110,8 @@
                 <h2 class="animate__animated animate__fadeInDown">Fast growing provider of premier semiconductor
                   technical solutions and end to
                   end solution from hardware to software</h2>
-                <p class="animate__animated animate__fadeInUp"> As a dynamic and rapidly expanding entity, we specialize in
+                <p class="animate__animated animate__fadeInUp main_p"> As a dynamic and rapidly expanding entity, we specialize
+                  in
                   delivering top-tier technical solutions that span the entire spectrum – from cutting-edge hardware to
                   seamlessly integrated software.</p>
                 <a href="#featured-services" class="btn-get-started scrollto animate__animated animate__fadeInUp">Get
@@ -186,34 +194,35 @@
   <main id="main">
 
     <!-- ======= Featured Services Section Section ======= -->
-    <section id="featured-services">
+    <!-- <section id="featured-services">
       <div class="container">
         <div class="row">
 
           <div class="col-lg-4 box">
             <i class="bi bi-briefcase"></i>
-            <h4 class="title"><a href="">Lorem Ipsum Delino</a></h4>
+            <h4 class="title"><a href="">Ai & Robotics</a></h4>
             <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint
               occaecati cupiditate non provident</p>
           </div>
 
           <div class="col-lg-4 box box-bg">
             <i class="bi bi-card-checklist"></i>
-            <h4 class="title"><a href="">Dolor Sitema</a></h4>
+            <h4 class="title"><a href="">Any other new Featured solution</a></h4>
             <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
               consequat tarad limino ata</p>
           </div>
 
           <div class="col-lg-4 box">
             <i class="bi bi-binoculars"></i>
-            <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
+            <h4 class="title"><a href="">Any other new featured-solution</a></h4>
             <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
               fugiat nulla pariatur</p>
           </div>
 
         </div>
       </div>
-    </section><!-- End Featured Services Section -->
+    </section> -->
+    <!-- End Featured Services Section -->
 
     <!-- ======= About Us Section ======= -->
     <section id="about">
@@ -283,7 +292,8 @@
         </div>
 
       </div>
-    </section><!-- End About Us Section -->
+    </section>
+    <!-- End About Us Section -->
 
     <!-- ======= Services Section ======= -->
     <section id="services">
@@ -299,38 +309,54 @@
         <div class="row">
 
           <div class="col-lg-4 col-md-6 box" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon"><i class="bi bi-briefcase"></i></div>
-            <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-            <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint
-              occaecati cupiditate non provident</p>
+            <!-- <div class="icon"><i class="bi bi-briefcase"></i></div> -->
+            <h4 class="title"><a href="">Embedded </a></h4>
+            <p class="description">
+              The edge computing device acquires data from vehicle sensors and cameras,
+              subsequently processing it.This AI device for edge computing will incorporate cutting-edge ADAS (Advanced
+              Driver Assistance System) and DMS (Driver Monitoring System) functionalitiesP2F is initiating the process
+              of designing Edge Computing Device applications with all the necessary components for the ADAS feature and
+              the Autonomous Vehicle Market.Targeted at the Indian market and its road conditions, this versatile edge
+              computing device serves various applications.
+            </p>
           </div>
           <div class="col-lg-4 col-md-6 box" data-aos="fade-up" data-aos-delay="200">
-            <div class="icon"><i class="bi bi-card-checklist"></i></div>
-            <h4 class="title"><a href="">Dolor Sitema</a></h4>
-            <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat tarad limino ata</p>
+            <!-- <div class="icon"><i class="bi bi-card-checklist"></i></div> -->
+            <h4 class="title"><a href="">EDA</a></h4>
+            <p class="description">P2F Semi is developing a new age Electronic Design Automation Solutions in the field
+              of timing analysis and closure for Physical Design with AI-First principles.
+              This solution reduces the Turn- Around-Time (TAT) involved in fixing timing violations in the chip design
+              cycle by upto 50% in full run cycle and by upto 70% in ECO cycle.
+              It also provides avenues to drastically cut power budgets of the chip by upto 25%</p>
           </div>
           <div class="col-lg-4 col-md-6 box" data-aos="fade-up" data-aos-delay="300">
-            <div class="icon"><i class="bi bi-bar-chart"></i></div>
-            <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
-            <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-              fugiat nulla pariatur</p>
+            <!-- <div class="icon"><i class="bi bi-bar-chart"></i></div> -->
+            <h4 class="title"><a href="">System on Chip</a></h4>
+            <p class="description">P2F is embarking upon the design and architecture of SOC (System on Chip) for the
+              Autonomous Vehicle Market with the goal to make it available for vehicles at all price points.
+              This SOC will have the latest and greatest ADAS (Advanced Driver Assistance system) as well as
+              DMS (Driver Monitoring System) features implemented with the help of self- learning AIML technology.
+              The SOC will be well- integrated with an appropriate set of
+              high resolution cameras, both in- cabin and front/rear facing.
+              This product will be aimed at Indian markets and Indian road conditions.</p>
           </div>
           <div class="col-lg-4 col-md-6 box" data-aos="fade-up" data-aos-delay="200">
-            <div class="icon"><i class="bi bi-binoculars"></i></div>
-            <h4 class="title"><a href="">Magni Dolores</a></h4>
-            <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-              mollit anim id est laborum</p>
+            <!-- <div class="icon"><i class="bi bi-binoculars"></i></div> -->
+            <h4 class="title"><a href="">ADAS</a></h4>
+            <p class="description">P2F embarks upon a path to develop all- in-one ADAS solutions designed for diverse
+              vehicle types, optimized for the unique road conditions in India. Our objective is to extend these
+              solutions across various vehicle segments, including automobiles, buses, rickshaws, and motorcycles, among
+              others.</p>
           </div>
           <div class="col-lg-4 col-md-6 box" data-aos="fade-up" data-aos-delay="300">
-            <div class="icon"><i class="bi bi-brightness-high"></i></div>
-            <h4 class="title"><a href="">Nemo Enim</a></h4>
+            <!-- <div class="icon"><i class="bi bi-brightness-high"></i></div> -->
+            <h4 class="title"><a href="">One more </a></h4>
             <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
               voluptatum deleniti atque</p>
           </div>
           <div class="col-lg-4 col-md-6 box" data-aos="fade-up" data-aos-delay="400">
-            <div class="icon"><i class="bi bi-calendar4-week"></i></div>
-            <h4 class="title"><a href="">Eiusmod Tempor</a></h4>
+            <!-- <div class="icon"><i class="bi bi-calendar4-week"></i></div> -->
+            <h4 class="title"><a href="">One more</a></h4>
             <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum
               soluta nobis est eligendi</p>
           </div>
@@ -338,7 +364,8 @@
         </div>
 
       </div>
-    </section><!-- End Services Section -->
+    </section>
+    <!-- End Services Section -->
 
     <!-- ======= Call To Action Section ======= -->
     <!-- <section id="call-to-action">
@@ -399,51 +426,11 @@
     <!-- End Skills Section -->
 
     <!-- ======= Facts Section ======= -->
-    <section id="facts">
-      <div class="container" data-aos="fade-up">
-
-        <header class="section-header">
-          <h3>Facts</h3>
-          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
-        </header>
-
-        <div class="row counters">
-
-          <div class="col-lg-3 col-6 text-center">
-            <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1"
-              class="purecounter"></span>
-            <p>Clients</p>
-          </div>
-
-          <div class="col-lg-3 col-6 text-center">
-            <span data-purecounter-start="0" data-purecounter-end="421" data-purecounter-duration="1"
-              class="purecounter"></span>
-            <p>Projects</p>
-          </div>
-
-          <div class="col-lg-3 col-6 text-center">
-            <span data-purecounter-start="0" data-purecounter-end="1364" data-purecounter-duration="1"
-              class="purecounter"></span>
-            <p>Hours Of Support</p>
-          </div>
-
-          <div class="col-lg-3 col-6 text-center">
-            <span data-purecounter-start="0" data-purecounter-end="38" data-purecounter-duration="1"
-              class="purecounter"></span>
-            <p>Hard Workers</p>
-          </div>
-
-        </div>
-
-        <!-- <div class="facts-img">
-          <img src="assets/img/facts-img.png" alt="" class="img-fluid">
-        </div> -->
-
-      </div>
-    </section><!-- End Facts Section -->
+    
+    <!-- End Facts Section -->
 
     <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="section-bg">
+    <!-- <section id="portfolio" class="section-bg">
       <div class="container" data-aos="fade-up">
 
         <header class="section-header">
@@ -610,10 +597,11 @@
       </div>
 
       </div>
-    </section><!-- End Portfolio Section -->
+    </section> -->
+    <!-- End Portfolio Section -->
 
     <!-- ======= Our Clients Section ======= -->
-    <section id="clients">
+    <!-- <section id="clients">
       <div class="container" data-aos="zoom-in">
 
         <header class="section-header">
@@ -635,10 +623,11 @@
         </div>
 
       </div>
-    </section><!-- End Our Clients Section -->
+    </section> -->
+    <!-- End Our Clients Section -->
 
     <!-- ======= Testimonials Section ======= -->
-    <section id="testimonials" class="section-bg">
+    <!-- <section id="testimonials" class="section-bg">
       <div class="container" data-aos="fade-up">
 
         <header class="section-header">
@@ -660,7 +649,7 @@
                   <img src="assets/img/quote-sign-right.png" class="quote-sign-right" alt="">
                 </p>
               </div>
-            </div><!-- End testimonial item -->
+            </div>
 
             <div class="swiper-slide">
               <div class="testimonial-item">
@@ -674,7 +663,7 @@
                   <img src="assets/img/quote-sign-right.png" class="quote-sign-right" alt="">
                 </p>
               </div>
-            </div><!-- End testimonial item -->
+            </div>
 
             <div class="swiper-slide">
               <div class="testimonial-item">
@@ -688,7 +677,7 @@
                   <img src="assets/img/quote-sign-right.png" class="quote-sign-right" alt="">
                 </p>
               </div>
-            </div><!-- End testimonial item -->
+            </div>
 
             <div class="swiper-slide">
               <div class="testimonial-item">
@@ -702,7 +691,7 @@
                   <img src="assets/img/quote-sign-right.png" class="quote-sign-right" alt="">
                 </p>
               </div>
-            </div><!-- End testimonial item -->
+            </div>
 
             <div class="swiper-slide">
               <div class="testimonial-item">
@@ -716,14 +705,15 @@
                   <img src="assets/img/quote-sign-right.png" class="quote-sign-right" alt="">
                 </p>
               </div>
-            </div><!-- End testimonial item -->
+            </div>
 
           </div>
           <div class="swiper-pagination"></div>
         </div>
 
       </div>
-    </section><!-- End Testimonials Section -->
+    </section> -->
+    <!-- End Testimonials Section -->
 
     <!-- ======= Team Section ======= -->
     <section id="team">
@@ -868,7 +858,7 @@
 
           <div class="col-lg-3 col-md-6">
             <div class="member" data-aos="fade-up" data-aos-delay="400">
-              <img src="assets/img/team-3.jpg" style="width: 100%; height: 260px;" class="img-fluid" alt="">
+              <img src="assets/img/team-1.jpg"  class="img-fluid" alt="">
               <div class="member-info">
                 <div class="member-info-content">
                   <h4>VEERA</h4>
@@ -889,6 +879,49 @@
       </div>
     </section><!-- End Team Section -->
 
+    <!-- <section id="facts">
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h3>Facts</h3>
+          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+        </header>
+
+        <div class="row counters">
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1"
+              class="purecounter"></span>
+            <p>Clients</p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-purecounter-start="0" data-purecounter-end="421" data-purecounter-duration="1"
+              class="purecounter"></span>
+            <p>Projects</p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-purecounter-start="0" data-purecounter-end="1364" data-purecounter-duration="1"
+              class="purecounter"></span>
+            <p>Hours Of Support</p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-purecounter-start="0" data-purecounter-end="38" data-purecounter-duration="1"
+              class="purecounter"></span>
+            <p>Hard Workers</p>
+          </div>
+
+        </div>
+
+        <div class="facts-img">
+          <img src="assets/img/facts-img.png" alt="" class="img-fluid">
+        </div> 
+
+      </div>
+    </section> -->
+    <!-- End facts Section -->
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="section-bg">
       <div class="container" data-aos="fade-up">
@@ -900,28 +933,40 @@
 
         <div class="row contact-info">
 
-          <div class="col-md-4">
-            <div class="contact-address">
+          <div class="col-md-4 ">
+            <div class="contact-address border border-2 rounded">
               <i class="bi bi-geo-alt"></i>
               <h3>Address -1</h3>
               <address>Trichy - No: 27/45, Venkateswara Street, Jaya Nagar, LIC Colony, KK
                 Nagar, Trichy - 620021</address>
+                <div style="padding: 10px;">
+                  <iframe class="border border-2 rounded" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d122110.45256536872!2d82.16482959784888!3d16.97692879405058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a38284c8b52090b%3A0x2e9eb38f426242f3!2s82%C2%B0%20EAST%20SRMT%20Mall%20%26%20Multiplex!5e0!3m2!1sen!2sin!4v1692333727109!5m2!1sen!2sin" width="" height="" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
             </div>
           </div>
           <div class="col-md-4 ">
-            <div class="contact-address">
+            <div class="contact-address border border-2 rounded">
               <i class="bi bi-geo-alt"></i>
               <h3>Address -2</h3>
               <address>Bangalore - Plot No: 31, Phase 2, Electronic City, Bengaluru, Karnataka
                 - 560100
-                </address>
+              </address>
+              <div style="padding: 10px;">
+                <iframe class="border border-2 rounded" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d122110.45256536872!2d82.16482959784888!3d16.97692879405058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a38284c8b52090b%3A0x2e9eb38f426242f3!2s82%C2%B0%20EAST%20SRMT%20Mall%20%26%20Multiplex!5e0!3m2!1sen!2sin!4v1692333727109!5m2!1sen!2sin" width="" height="" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="contact-address">
+          <div class="col-md-4 ">
+            <div class="contact-address border border-2 rounded">
               <i class="bi bi-geo-alt"></i>
               <h3>Address -3</h3>
-              <address>Pune</address>
+              <address>Pune
+                Electronic City, Bengaluru, Karnataka
+                - 560100
+              </address>
+              <div style="padding: 10px;">
+                <iframe class="border border-2 rounded" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d122110.45256536872!2d82.16482959784888!3d16.97692879405058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a38284c8b52090b%3A0x2e9eb38f426242f3!2s82%C2%B0%20EAST%20SRMT%20Mall%20%26%20Multiplex!5e0!3m2!1sen!2sin!4v1692333727109!5m2!1sen!2sin" width="" height="" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
             </div>
           </div>
 
@@ -993,7 +1038,7 @@
             <ul>
               <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
               <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Solutions</a></li>
               <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
               <li><i class="bi bi-chevron-right"></i> <a href="#">Privacy policy</a></li>
             </ul>
@@ -1002,12 +1047,12 @@
           <div class="col-lg-3 col-md-6 footer-contact">
             <h4>Contact Us(Main Branch)</h4>
             <p>Trichy - No: 27/45,<br>
-               Venkateswara Street,
-               <br> Jaya Nagar,<br> 
-               LIC Colony,
-               <br>
-                KK Nagar, <br>
-                Trichy - 620021,<br>
+              Venkateswara Street,
+              <br> Jaya Nagar,<br>
+              LIC Colony,
+              <br>
+              KK Nagar, <br>
+              Trichy - 620021,<br>
               <!-- <strong>Phone:</strong> +1 5589 55488 55<br> -->
               <strong>Email:</strong> hr@p2fsemi.com<br>
             </p>
