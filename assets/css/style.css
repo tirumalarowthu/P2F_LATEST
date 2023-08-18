@@ -770,6 +770,13 @@ section {
 
 #services .box {
   margin-bottom: 30px;
+  border:2px solid #efefef;
+  border-radius: 5px;
+}
+#services .box:hover {
+  border-radius: 15px;
+  background-color: #efefef;
+  border: 2px solid black;
 }
 
 #services .icon {
@@ -784,10 +791,12 @@ section {
 }
 
 #services .title {
-  margin-left: 60px;
+  /* margin-left: 60px; */
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 18px;
+  margin-top:5px;
+  margin-bottom:5px
 }
 
 #services .title a {
@@ -800,9 +809,10 @@ section {
 
 #services .description {
   font-size: 14px;
-  margin-left: 60px;
+  /* margin-left: 60px; */
   line-height: 24px;
   margin-bottom: 0;
+  padding: 10px;
 }
 
 /* Call To Action Section
